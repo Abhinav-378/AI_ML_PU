@@ -10,6 +10,8 @@ import Diagnosis from './Components/Diagnosis.jsx'
 import CalorieIntakePlan from './Components/CalorieIntakePlan.jsx'
 import LogIn from './Components/LogIn.jsx'
 import Signup from './Components/Signup.jsx'
+import HospitalPredictor from './Components/HospitalPredictor.jsx'
+import EmergencyList from './Components/EmergencyList.jsx'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path:"signup",
         element: <Signup/>
+      },
+      {
+        path:"hospitals",
+        element: <HospitalPredictor/>
+      },
+      {
+        path:"admin",
+        element: <EmergencyList/>
       }
     ]
   }

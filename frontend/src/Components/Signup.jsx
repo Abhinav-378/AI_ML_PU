@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 function Signup() {
   const navigate = useNavigate();
   const [contact, setContact] = useState('');
@@ -58,6 +58,7 @@ function Signup() {
       />
       <button onClick={handleSignUp} className='rounded border-2 my-5 px-3 py-2 border-gray-500 bg-slate-600'>Sign Up</button>
       <p>{message}</p>
+      <p><Link to='/signin' className='text-green-400'>Sign In?</Link> </p>
     </div>
   );
 }

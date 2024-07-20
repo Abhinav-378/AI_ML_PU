@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 function LogIn() {
@@ -49,7 +50,10 @@ function LogIn() {
         className='rounded-lg p-2 text-lg'
       />
       <button onClick={handleSignIn} className='rounded border-2 my-5 px-3 py-2 border-gray-500 bg-slate-600'>Sign In</button>
+        <hr className="w-[50vw] my-6" />
       <p>{message}</p>
+      <p>Create a new Account</p>
+      <p><Link to='/signup' className='text-green-400'>Sign Up</Link>  </p>
       </div>
       
     </div>

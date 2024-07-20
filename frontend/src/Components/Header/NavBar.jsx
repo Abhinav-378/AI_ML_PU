@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import logo from '../../assets/logo1.png'
 function NavBar() {
   return (
     <div>
@@ -30,7 +30,7 @@ function NavBar() {
               <li>
                 <a>Health Predictor</a>
               </li>
-              <li>
+              {/* <li>
                 <a>t</a>
                 <ul className="p-2">
                   <li>
@@ -40,14 +40,14 @@ function NavBar() {
                     <a>Submenu 2</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <a>Self Diagnosis</a>
               </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-2xl font-bold">
-            cureNow
+            <img src={logo} alt="" className="h-28"/>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -55,7 +55,7 @@ function NavBar() {
             <li>
               <Link to="diagnosis">Self Diagnosis</Link>
             </li>
-            <li>
+            {/* <li>
               <details>
                 <summary>Tools</summary>
                 <ul className="p-2">
@@ -67,9 +67,12 @@ function NavBar() {
                   </li>
                 </ul>
               </details>
+            </li> */}
+            <li>
+              <a href="http://localhost:8501">Health Predictor</a>
             </li>
             <li>
-              <a href="http://localhost:4801">Health Predictor</a>
+              <Link to='/calories'>Calorie Intake Plan</Link>
             </li>
           </ul>
         </div>
