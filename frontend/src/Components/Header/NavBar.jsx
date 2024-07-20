@@ -28,10 +28,10 @@ function NavBar() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Health Predictor</a>
               </li>
               <li>
-                <a>Parent</a>
+                <a>t</a>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -42,7 +42,7 @@ function NavBar() {
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Self Diagnosis</a>
               </li>
             </ul>
           </div>
@@ -69,13 +69,15 @@ function NavBar() {
               </details>
             </li>
             <li>
-              <a>Hospital Locator</a>
+              <a href="http://localhost:4801">Health Predictor</a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <Link to="/sosrequest" className="btn">
+        <div className="navbar-end " >
+          <Link to="/sosrequest" className="btn ">
+          <span className='text-xl font-bold bg-gradient-to-r from-blue-400 via-pink-500 to-red-500 bg-clip-text text-transparent'>
             Emergency
+          </span>
           </Link>
         </div>
       </div>

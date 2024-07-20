@@ -68,7 +68,7 @@ function Diagnosis() {
     <div>
       <div className="flex justify-center items-center">
         {/* form */}
-        <div className="w-[50vw] h-[70vh] flex flex-col justify-center items-center gap-10 p-5">
+        <div className="w-[50vw] h-[80vh] flex flex-col justify-center items-center gap-10 p-5">
           <h1 className="text-white text-4xl font-bold ">Symptoms Input Form: </h1>
           {/* <h2>SOS request sent Successfully</h2> */}
           <div>
@@ -122,7 +122,7 @@ function Diagnosis() {
             <button onClick={handleSubmit} className="font-semibold text-2xl   py-2 px-4 rounded-lg text-white border-red-500 border-2 bg-red-600">Submit</button>
           </div>
         </div>
-        <div className="w-[50vw] h-[70vh] bg-slate-800 p-5 border-2 border-slate-600 rounded-md">
+        <div className="w-[50vw] h-[80vh] bg-slate-800 p-5 border-2 border-slate-600 rounded-md">
           {/* suggestions */}
           <h1 className="text-2xl font-bold text-green-400 mb-3 ">Diagnosis and management advice: </h1>
           <p className="text-white">{answer && formatAnswer(answer)}</p>

@@ -8,6 +8,8 @@ import Emergency from './Components/Emergency.jsx'
 import EmergencyForm from './Components/EmergencyForm.jsx'
 import Diagnosis from './Components/Diagnosis.jsx'
 import CalorieIntakePlan from './Components/CalorieIntakePlan.jsx'
+import LogIn from './Components/LogIn.jsx'
+import Signup from './Components/Signup.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path:"calories",
         element: <CalorieIntakePlan/>
+      },
+      {
+        path:"signin",
+        element: <LogIn/>
+      },
+      {
+        path:"signup",
+        element: <Signup/>
       }
     ]
   }
