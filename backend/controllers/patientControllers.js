@@ -70,3 +70,15 @@ exports.signin = async (req, res) => {
         });
     }
 }
+exports.deletePatient = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const patient = await Patient.findByIdAndDelete(id);
+        if (!patient) {
+            return res.status(404).json({ message: "Patient not found" });
+        }
+        res.status(200).json({ message: "Patient deleted successfully" });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
