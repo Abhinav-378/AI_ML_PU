@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const connectToDb = async ()=>{
-    mongoose.connect("mongodb+srv://abhi05:abhi7505@cluster0.hohduyy.mongodb.net/patientRec")
+    mongoose.connect("mongodb+srv://abhi05:***pswd***@cluster0.hohduyy.mongodb.net/patientRec")
     .then((conn)=>{
         console.log(`connected to db: ${conn.connection.host}`);
     })

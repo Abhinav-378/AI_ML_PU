@@ -70,7 +70,7 @@ function EmergencyForm() {
     try {
       setAnswer('Loading...');
       const response = await axios.post(
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCSw0S9Y6tVpAdq0_OxTpwlg_bcD19mRRs',
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AI*****',
         {
           contents: [{
             parts: [{
